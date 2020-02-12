@@ -1,0 +1,27 @@
+{
+  "config": {
+    "platform": {
+      "php": "7.0.22"
+    }
+  },
+  "autoload": {
+    "psr-4": {
+      "UKRI\\Search\\": "app/"
+    }
+  },
+  "scripts": {
+    "post-update-cmd": "vendor/bin/phar-install"
+  },
+  "require-dev": {
+    "dxw/phar-install": "^1.1",
+    "friendsofphp/php-cs-fixer": "^2.15",
+    "peridot-php/peridot": "^1.19",
+    "peridot-php/leo": "^1.6",
+    "peridot-php/peridot-dot-reporter": "^1.0",
+    "php-mock/php-mock-mockery": "^1.3",
+    "10up/wp_mock": "^0.3.0"
+  },
+  "require": {
+    "dxw/iguana": "^1.1"
+  }
+}
